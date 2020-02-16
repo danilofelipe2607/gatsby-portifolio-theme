@@ -1,20 +1,24 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import Perfil from '../images/perfil.jpg'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    <div className="logo">
-      <span className="icon fa-diamond"></span>
+    <div>
+      <img src={Perfil} width="150px" height="150px" />
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>DANILO FELIPE DIAS DOS SANTOS</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
+          Desenvolvedor Fullstack Javascript ,React, React Native & C#, Possuo
+          experiência em desenvolvimento web, com a plataforma Node.js,
+          utilizando framework express. Experiência em front end com HTML5,
+          CSS3, javascript, bootstrap, em banco de dados: MySQL, PostgreSQL,
+          MongoDB (mongoose),em mobile: em React Native e algumas ferramentas de
+          versionamento .
           <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          <a>https://www.linkedin.com/in/danilofelipe2607/</a>
         </p>
       </div>
     </div>
@@ -26,7 +30,7 @@ const Header = props => (
               props.onOpenArticle('intro')
             }}
           >
-            Intro
+            Início
           </button>
         </li>
         <li>
@@ -35,7 +39,7 @@ const Header = props => (
               props.onOpenArticle('work')
             }}
           >
-            Work
+            Trabalhos
           </button>
         </li>
         <li>
@@ -44,7 +48,7 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            About
+            Sobre
           </button>
         </li>
         <li>
@@ -53,7 +57,7 @@ const Header = props => (
               props.onOpenArticle('contact')
             }}
           >
-            Contact
+            Contato
           </button>
         </li>
       </ul>
